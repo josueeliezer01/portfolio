@@ -1,0 +1,83 @@
+.grid__text__h1 {
+  font-size: 3.5em;
+  text-align: left;
+  max-width: 60%;
+  font-weight: 600;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.grid__text__h1 span {
+  position: relative;
+  color: #bf9a54;
+}
+
+.grid__text__h1 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, #d9d8d7, #73532c, #f2d6a2);
+  background-size: 800% 800%;
+  animation: gradient 4s ease infinite;
+}
+
+.grid__text__p {
+  font-size: 1.2em;
+  color: #bf9a54;
+  margin: 0.5em 0;
+  text-align: left;
+  max-width: 40%;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  color: white;
+  height: 250px;
+  padding: 30px;
+}
+
+.grid-item svg {
+  font-size: 64px;
+  color: black;
+  margin-bottom: 20px;
+  align-items: left;
+}
+
+.grid-item h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  color: #73532c;
+  font-size: 1.1em;
+  text-align: left;
+}

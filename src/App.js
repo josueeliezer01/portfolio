@@ -1,56 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NavBar from "./Components/NavBar/NavBar";
+import Hero from "./Components/Hero/Hero";
+import Skills from "./Components/Skills/Skills";
+import Section from "./Components/Section/Section";
 
 function App() {
+  const gradientBg = "linear-gradient(259deg, #bf9a54 0%, #73532c 100%)";
+  const whiteBg = "whitesmoke";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="app">
+      <Section background={gradientBg}>
+        <div className="container">
+          <NavBar />
+          <Hero />
+        </div>
+      </Section>
+      <Section background={whiteBg}>
+        <div className="container">
+          <Skills />
+        </div>
+      </Section>
     </div>
   );
 }
