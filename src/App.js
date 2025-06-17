@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import Hero from "./Components/Hero/Hero";
@@ -6,7 +5,8 @@ import Skills from "./Components/Skills/Skills";
 import Section from "./Components/Section/Section";
 
 function App() {
-  const gradientBg = "linear-gradient(259deg, #bf9a54 0%, #73532c 100%)";
+  const gradientBg =
+    "linear-gradient(45deg, hsl(none 0% 40%), hsl(none 0% 94.9%))";
   const whiteBg = "whitesmoke";
 
   return (

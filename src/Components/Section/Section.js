@@ -1,5 +1,3 @@
-import React from "react";
-
 function Section({ children, background }) {
   const sectionStyle = {
     background: background,

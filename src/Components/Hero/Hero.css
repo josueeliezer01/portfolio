@@ -17,7 +17,7 @@
 
 .hero__img img {
   width: auto;
-  height: 70vh;
+  height: 80vh;
   min-height: 600px;
   object-fit: cover;
   vertical-align: middle;
@@ -48,7 +48,7 @@
   position: relative;
   text-decoration: none;
   color: #d9d8d7;
-  background: linear-gradient(270deg, #d9d8d7, #73532c, #f2d6a2);
+  background: linear-gradient(to right, #1f1c2c, #928dab);
   background-size: 800% 800%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -56,24 +56,22 @@
   animation: gradient 4s ease infinite;
 }
 
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.5px;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(270deg, #d9d8d7, #73532c, #f2d6a2);
-  background-size: 800% 800%;
-  animation: gradient 4s ease infinite;
-}
 .button {
   margin-top: 2em;
   padding: 0.8em 1.8em;
   font-size: 1.5em;
   color: #0d0d0d;
   border: none;
-  background: #f2d6a2;
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
   border-radius: 5em;
   cursor: pointer;
   transition: color 0.4s ease-out;
@@ -90,7 +88,7 @@
   left: 50%;
   width: 200%;
   height: 200%;
-  background: #73532c;
+  background: linear-gradient(45deg, hsl(none 0% 40%), hsl(none 0% 94.9%));
   transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
   z-index: 0;
   transform: translate(-50%, -20%) rotate(50deg);
@@ -118,7 +116,7 @@
   z-index: 1;
   bottom: 0;
   font-size: 1.3em;
-  color: #bf9a54;
+  color: #a2a2a2;
   text-align: center;
 }
 
@@ -167,7 +165,7 @@
 
   .hero__img img {
     width: auto;
-    height: 60vh;
+    height: 65vh;
     min-height: 400px;
     margin-right: 0;
   }
