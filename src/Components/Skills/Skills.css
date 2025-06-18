@@ -16,7 +16,7 @@
 
 .skills__text__h1 span {
   position: relative;
-  color: #bf9a54;
+  color: linear-gradient(45deg, hsl(none 0% 40%), hsl(none 0% 94.9%));
 }
 
 .skills__text__h1 span::after {
@@ -26,14 +26,14 @@
   bottom: -0.5px;
   width: 100%;
   height: 4px;
-  background: linear-gradient(270deg, #d9d8d7, #73532c, #f2d6a2);
+  background: linear-gradient(to right, #1f1c2c, #928dab);
   background-size: 800% 800%;
   animation: gradient 4s ease infinite;
 }
 
 .skills__text__p {
   font-size: 1.2em;
-  color: #bf9a54;
+  color: #000;
   margin-top: 2em;
   text-align: left;
   max-width: 50%;
@@ -103,7 +103,16 @@
 }
 
 .skills__button button {
-  background-color: #f2d6a2;
+  background-color: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
   border: none;
   border-radius: 5em;
   color: #0d0d0d;

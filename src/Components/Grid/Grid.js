@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Grid.css";
 import { motion } from "framer-motion";
 import {
@@ -44,16 +44,18 @@ function Grid() {
 
   return (
     <div className="grid">
-      <div className="grid__text">
-        {/* Text section remains unchanged */}
-      </div>
+      <div className="grid__text">{/* Text section remains unchanged */}</div>
       <div className="skill">
         <div className="grid-container">
           {[
             { icon: <BarChart />, title: "UX Research", text: "..." },
             { icon: <GridView />, title: "UI Design", text: "..." },
             { icon: <DesignServices />, title: "Markup Design", text: "..." },
-            { icon: <AutoAwesomeMotion />, title: "Prototyping Design", text: "..." },
+            {
+              icon: <AutoAwesomeMotion />,
+              title: "Prototyping Design",
+              text: "...",
+            },
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -65,7 +67,7 @@ function Grid() {
               style={{
                 // Updated grid layout properties
                 gridRow: Math.ceil((index + 1) / 2), // Calculate row based on index
-                gridColumn: (index % 2) === 0 ? 1 : 2, // Set column based on even/odd index
+                gridColumn: index % 2 === 0 ? 1 : 2, // Set column based on even/odd index
                 backgroundColor: index % 2 === 0 ? "#d9d8d7" : "#bf9a54",
               }}>
               {item.icon}

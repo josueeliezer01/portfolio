@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Skills.css";
@@ -23,9 +23,11 @@ function Skills() {
           My <span>Superpower</span> IsCreating Interactive Website
         </h1>
         <p className="skills__text__p">
-          I love to do designs for every category of websites whether it be an
-          online eCommerce store, an event page or even a product landing page.
-          et dolore magna aliqua. Quis ipsum sus
+          I’m a versatile web designer passionate about crafting beautiful,
+          user-friendly sites for any purpose—whether an eCommerce storefront,
+          an event page, or a product landing page. I combine creativity with
+          attention to detail to deliver designs that engage visitors and drive
+          results.
         </p>
       </div>
 

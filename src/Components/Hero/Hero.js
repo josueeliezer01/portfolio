@@ -1,4 +1,3 @@
-import React from "react";
 import "./Hero.css";
 import me from "../../assets/me.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -21,50 +20,47 @@ function Hero() {
             href="https://www.instagram.com/j0sue_eliezer/"
             target="_blank"
             rel="noopener noreferrer">
-            <InstagramIcon
-              className="network__item"
-              style={{ fontSize: 40, transition: "transform 0.3s" }}
-            />
+            <InstagramIcon className="network__item" />
           </a>
           <a
             href="https://www.facebook.com/josue.eliezer.3"
             target="_blank"
             rel="noopener noreferrer">
-            <FacebookIcon
-              className="network__item"
-              style={{ fontSize: 40, transition: "transform 0.3s" }}
-            />
+            <FacebookIcon className="network__item" />
           </a>
           <a
             href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"
             target="_blank"
             rel="noopener noreferrer">
-            <LinkedInIcon
-              className="network__item"
-              style={{ fontSize: 40, transition: "transform 0.3s" }}
-            />
+            <LinkedInIcon className="network__item" />
           </a>
           <a
             href="https://github.com/josueeliezer01"
             target="_blank"
             rel="noopener noreferrer">
-            <GitHubIcon
-              className="network__item"
-              style={{ fontSize: 40, transition: "transform 0.3s" }}
-            />
+            <GitHubIcon className="network__item" />
           </a>
         </div>
       </div>
-      <div className="hero__img">
-        <img
-          src={me}
-          alt="me"
-        />
+
+      <div className="hero__img-container">
+        <img src={me} alt="me" className="hero__img" />
         <div className="description">
-          <p>- Web designer</p>
+          <p className="description__title">Web Designer | Josué Eliezer</p>
           <p>
-            Hi there! I’m Josué Eliezer, a passionate web designer who loves to
-            take challenges and create stunning website designs.
+            Hello! I’m Josué Eliezer—a passionate web designer who loves turning
+            ideas into memorable online experiences. From elegant eCommerce
+            stores and captivating event pages to sleek product landing sites, I
+            embrace every challenge to craft pixel‑perfect designs that:
+            <br />
+            🎨 Combine striking visuals with intuitive usability
+            <br />
+            📈 Engage audiences and boost conversions
+            <br />
+            🌐 Adapt flawlessly across all devices Ready to elevate your web
+            presence?
+            <br />
+            Let’s make it happen!
           </p>
         </div>
       </div>
