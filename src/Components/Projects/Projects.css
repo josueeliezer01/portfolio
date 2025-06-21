@@ -1,0 +1,116 @@
+.projects-section {
+  padding: 4rem 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.projects-section.enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.projects-section.enter .project-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+.projects-section.enter .project-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.projects-section.enter .project-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.projects-section.enter .project-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-image-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.project-card:hover .card-image-primary {
+  opacity: 0;
+  transform: scale(1.05);
+}
+.project-card:hover .card-image-secondary {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.card-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0.25rem;
+  color: #222;
+}
+
+.project-type {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 1.75rem;
+  }
+}
+

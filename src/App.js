@@ -3,6 +3,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import Hero from "./Components/Hero/Hero";
 import Skills from "./Components/Skills/Skills";
 import Section from "./Components/Section/Section";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   const gradientBg =
@@ -15,6 +16,11 @@ function App() {
         <div className="container">
           <NavBar />
           <Hero />
+        </div>
+      </Section>
+      <Section background={whiteBg}>
+        <div className="container">
+          <Projects />
         </div>
       </Section>
       <Section background={whiteBg}>
