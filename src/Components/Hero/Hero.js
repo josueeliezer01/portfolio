@@ -1,12 +1,29 @@
 // Hero.jsx
 import "./Hero.css";
 import me from "../../assets/me.png";
+import ReactIcon from "../../assets/react.svg";
+import HtmlIcon from "../../assets/html5.svg";
+import CssIcon from "../../assets/css3.svg";
+import JsIcon from "../../assets/javascript.svg";
+import TsIcon from "../../assets/typescript.svg";
+import FirebaseIcon from "../../assets/firebase.svg";
+import NextIcon from "../../assets/nextjs.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { useState } from "react";
+
+const logos = [
+  { src: ReactIcon, alt: "React" },
+  { src: HtmlIcon, alt: "HTML5" },
+  { src: CssIcon, alt: "CSS3" },
+  { src: JsIcon, alt: "JavaScript" },
+  { src: TsIcon, alt: "TypeScript" },
+  { src: FirebaseIcon, alt: "Firebase" },
+  { src: NextIcon, alt: "Next.js" },
+];
 
 function Hero() {
   const [showDesc, setShowDesc] = useState(false);
@@ -20,6 +37,19 @@ function Hero() {
 
   return (
     <div className="hero">
+      {/* Floating tech logos */}
+      <div className="floating-logos">
+        {logos.map((logo, idx) => (
+          <img
+            key={idx}
+            src={logo.src}
+            alt={logo.alt}
+            className="floating-logos__item"
+            style={{ "--i": idx + 1 }}
+          />
+        ))}
+      </div>
+
       <div className="hero__text">
         <h1>
           Hire me to design your <span className="highlight">Website.</span>
@@ -28,8 +58,7 @@ function Hero() {
           className="button"
           onClick={handleWhatsApp}
           aria-label="Contact via WhatsApp"
-          title="Contact via WhatsApp"
-        >
+          title="Contact via WhatsApp">
           <span>Get In Touch</span>
         </button>
         <div className="network">
