@@ -34,22 +34,13 @@ function NavBar() {
         <nav>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#presentation">Presentation</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#case-study">Case Study</a>
-            </li>
-            <li>
-              <a href="#testimonial">Testimonial</a>
-            </li>
-            <li>
-              <a href="#blog">Blog</a>
             </li>
           </ul>
         </nav>

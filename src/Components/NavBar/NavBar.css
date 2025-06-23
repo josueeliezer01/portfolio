@@ -1,12 +1,11 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: 0.4s;
   width: 100%;
-  height: 50px;
+  height: 75px;
   z-index: 10;
-  margin-bottom: -10px;
 }
 
 .dark-nav {
@@ -126,6 +125,9 @@
 
   .nav__toggle {
     display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
   }
 }
 

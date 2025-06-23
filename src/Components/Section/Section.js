@@ -1,11 +1,17 @@
-function Section({ children, background }) {
+function Section({ id, children, background }) {
   const sectionStyle = {
     background: background,
     width: "100%",
     display: "flex",
   };
 
-  return <div style={sectionStyle}>{children}</div>;
+  return (
+    <div
+      id={id}
+      style={sectionStyle}>
+      {children}
+    </div>
+  );
 }
 
 export default Section;

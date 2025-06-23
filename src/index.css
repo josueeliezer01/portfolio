@@ -5,4 +5,5 @@
   box-sizing: border-box;
   font-family: "Inter", Sans-serif;
   line-height: 1.2em;
+  scroll-behavior: smooth;
 }

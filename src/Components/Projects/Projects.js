@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Projects.css";
 
-// Exemplo de dados de projetos; para adicionar novos projetos, basta incluir neste array
 const projects = [
   {
     name: "Delícias Caseiras",
@@ -55,7 +54,7 @@ const Projects = () => {
     <section
       ref={sectionRef}
       className={`projects-section ${visible ? "enter" : ""}`}>
-      <h2 className="projects-title">Meus Projetos Recentes</h2>
+      <h2 className="projects-title">My Recent Projects</h2>
       <div className="projects-grid">
         {projects.map((proj, idx) => (
           <a
