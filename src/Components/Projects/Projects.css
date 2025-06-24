@@ -1,9 +1,10 @@
 .projects-section {
-  padding: 2em 1em;
+  padding: 2em 0;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   height: 100svh;
+  min-height: fit-content;
   max-width: 100%;
 }
 .projects-section.enter {
@@ -20,7 +21,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 
@@ -115,4 +116,3 @@
     font-size: 1.75rem;
   }
 }
-

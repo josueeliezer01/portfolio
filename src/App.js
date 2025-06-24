@@ -3,6 +3,8 @@ import NavBar from "./Components/NavBar/NavBar";
 import Hero from "./Components/Hero/Hero";
 import Section from "./Components/Section/Section";
 import Projects from "./Components/Projects/Projects";
+import Footer from "./Components/Footer/Footer";
+import MailMeForm from "./Components/MailMeForm/MailMeForm";
 
 function App() {
   const gradientBg =
@@ -28,8 +30,17 @@ function App() {
       </Section>
       <Section
         background={gradientBg}
-        id="">
-        <div className="container"></div>
+        id="footer">
+        <div className="container">
+          <MailMeForm />
+        </div>
+      </Section>
+      <Section
+        background={whiteBg}
+        id="footer">
+        <div className="container">
+          <Footer />
+        </div>
       </Section>
     </div>
   );

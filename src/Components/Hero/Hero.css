@@ -5,6 +5,7 @@
   opacity: 0.8;
   animation: floatAnim 12s ease-in-out infinite;
   animation-delay: calc(var(--i) * 1.5s);
+  overflow: hidden;
 }
 
 .floating-logos__item:nth-child(1) {
@@ -234,7 +235,7 @@
   }
 
   .hero__text {
-    width: 100%;
+    width: 85%;
     margin: 1em 0;
   }
 
@@ -262,9 +263,8 @@
   .info-toggle {
     position: absolute;
     bottom: 1em;
-    right: 1em;
-    background: rgba(255, 255, 255, 0);
-    border: none;
+    right: -0.8em;
+    background: rgb(255, 255, 255);
     border-radius: 50%;
     cursor: pointer;
     z-index: 7;
@@ -273,10 +273,11 @@
     justify-content: center;
     pointer-events: all;
     transition: background 0.3s;
+    padding: 0.2em;
   }
 
   .info-toggle:hover {
-    background: rgba(255, 255, 255, 1);
+    scale: 1.1;
   }
 
   .description {
@@ -363,5 +364,11 @@
 
   .network__item {
     margin: 0 0.2em;
+  }
+}
+
+@media (max-width: 345px) { 
+  .info-toggle {
+    right: 1em;
   }
 }
