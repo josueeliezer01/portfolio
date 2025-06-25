@@ -30,7 +30,7 @@ function App() {
       </Section>
       <Section
         background={gradientBg}
-        id="footer">
+        id="contact">
         <div className="container">
           <MailMeForm />
         </div>
