@@ -9,20 +9,20 @@
 }
 
 .floating-logos__item:nth-child(1) {
-  top: 30%;
-  left: 90%;
+  top: 40%;
+  left: 95%;
 }
 .floating-logos__item:nth-child(2) {
   top: 5%;
   left: 75%;
 }
 .floating-logos__item:nth-child(3) {
-  top: 9%;
+  top: 15%;
   left: 92%;
 }
 .floating-logos__item:nth-child(4) {
-  top: 6%;
-  left: 50%;
+  top: 10%;
+  left: 60%;
 }
 .floating-logos__item:nth-child(5) {
   top: 50%;
@@ -31,10 +31,6 @@
 .floating-logos__item:nth-child(6) {
   top: 25%;
   left: 50%;
-}
-.floating-logos__item:nth-child(7) {
-  top: 45%;
-  left: 90%;
 }
 
 @keyframes floatAnim {
@@ -367,7 +363,7 @@
   }
 }
 
-@media (max-width: 345px) { 
+@media (max-width: 345px) {
   .info-toggle {
     right: 1em;
   }

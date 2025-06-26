@@ -7,7 +7,6 @@ import CssIcon from "../../assets/css3.svg";
 import JsIcon from "../../assets/javascript.svg";
 import TsIcon from "../../assets/typescript.svg";
 import FirebaseIcon from "../../assets/firebase.svg";
-import NextIcon from "../../assets/nextjs.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -22,7 +21,6 @@ const logos = [
   { src: JsIcon, alt: "JavaScript" },
   { src: TsIcon, alt: "TypeScript" },
   { src: FirebaseIcon, alt: "Firebase" },
-  { src: NextIcon, alt: "Next.js" },
 ];
 
 function Hero() {
