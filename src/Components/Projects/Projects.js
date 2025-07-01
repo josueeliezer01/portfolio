@@ -3,12 +3,21 @@ import "./Projects.css";
 
 const projects = [
   {
-    name: "Delícias Caseiras",
+    name: "BE-STRONG",
     type: "E-commerce",
-    url: "https://delicias-caseiras-ba191.web.app",
+    url: "https://be-strong-2c7b8.web.app",
     images: [
-      require("../../assets/delicias-caseiras1.png"),
-      require("../../assets/delicias-caseiras2.png"),
+      require("../../assets/be-strong1.png"),
+      require("../../assets/be-strong2.png"),
+    ],
+  },
+  {
+    name: "Quinta da Magarenha",
+    type: "Landing Page",
+    url: "https://josueeliezer01.github.io/restaurant/",
+    images: [
+      require("../../assets/quinta-da-magarenha1.png"),
+      require("../../assets/quinta-da-magarenha2.png"),
     ],
   },
   {
@@ -21,14 +30,15 @@ const projects = [
     ],
   },
   {
-    name: "Quinta da Magarenha",
-    type: "Landing Page",
-    url: "https://josueeliezer01.github.io/restaurant/",
+    name: "Delícias Caseiras",
+    type: "E-commerce",
+    url: "https://delicias-caseiras-ba191.web.app",
     images: [
-      require("../../assets/quinta-da-magarenha1.png"),
-      require("../../assets/quinta-da-magarenha2.png"),
+      require("../../assets/delicias-caseiras1.png"),
+      require("../../assets/delicias-caseiras2.png"),
     ],
   },
+
   // Adicione novos projetos aqui
 ];
 
