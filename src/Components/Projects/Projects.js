@@ -5,7 +5,7 @@ const projects = [
   {
     name: "BE-STRONG",
     type: "E-commerce",
-    url: "https://be-strong-2c7b8.web.app",
+    url: "https://frontend-fp1s.onrender.com",
     images: [
       require("../../assets/be-strong1.png"),
       require("../../assets/be-strong2.png"),
