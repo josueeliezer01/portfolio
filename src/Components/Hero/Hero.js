@@ -5,8 +5,9 @@ import ReactIcon from "../../assets/react.svg";
 import HtmlIcon from "../../assets/html5.svg";
 import CssIcon from "../../assets/css3.svg";
 import JsIcon from "../../assets/javascript.svg";
-import TsIcon from "../../assets/typescript.svg";
-import FirebaseIcon from "../../assets/firebase.svg";
+import NodeIcon from "../../assets/nodejs.svg";
+import DockerIcon from "../../assets/docker.svg";
+import PostgresqlIcon from "../../assets/postgresql.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -19,8 +20,9 @@ const logos = [
   { src: HtmlIcon, alt: "HTML5" },
   { src: CssIcon, alt: "CSS3" },
   { src: JsIcon, alt: "JavaScript" },
-  { src: TsIcon, alt: "TypeScript" },
-  { src: FirebaseIcon, alt: "Firebase" },
+  { src: NodeIcon, alt: "Node.js" },
+  { src: DockerIcon, alt: "Docker" },
+  { src: PostgresqlIcon, alt: "PostgreSQL" },
 ];
 
 function Hero() {

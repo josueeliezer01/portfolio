@@ -26,11 +26,15 @@
 }
 .floating-logos__item:nth-child(5) {
   top: 50%;
-  left: 50%;
+  left: 55%;
 }
 .floating-logos__item:nth-child(6) {
   top: 25%;
-  left: 50%;
+  left: 55%;
+}
+.floating-logos__item:nth-child(7) {
+  top: 40%;
+  left: 55%;
 }
 
 @keyframes floatAnim {
