@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Quinta da Magarenha",
     type: "Landing Page",
-    url: "https://josueeliezer01.github.io/restaurant/",
+    url: "https://restaurant-f940f.web.app",
     images: [
       require("../../assets/quinta-da-magarenha1.png"),
       require("../../assets/quinta-da-magarenha2.png"),
